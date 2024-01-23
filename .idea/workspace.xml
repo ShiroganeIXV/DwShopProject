@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/RoleRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/UserRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/DwshopBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/DwshopBackendApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -74,6 +72,15 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "JUnit.RoleRepositoryTest.testCreateFirstRole.executor": "Run",
     "JUnit.RoleRepositoryTest.testCreateRestRoles.executor": "Run",
+    "JUnit.UserRepositoryTest.executor": "Run",
+    "JUnit.UserRepositoryTest.testCreateUser.executor": "Run",
+    "JUnit.UserRepositoryTest.testCreateUserWithOneRole.executor": "Run",
+    "JUnit.UserRepositoryTest.testCreateUserWithTwoRoles.executor": "Run",
+    "JUnit.UserRepositoryTest.testDeleteUser.executor": "Run",
+    "JUnit.UserRepositoryTest.testGetUserById.executor": "Run",
+    "JUnit.UserRepositoryTest.testListAllUsers.executor": "Run",
+    "JUnit.UserRepositoryTest.testUpdateUserDetails.executor": "Run",
+    "JUnit.UserRepositoryTest.testUpdateUserRoles.executor": "Run",
     "Maven.dwshopProject [clean].executor": "Run",
     "Maven.dwshopProject [compile].executor": "Run",
     "Maven.dwshopProject [install].executor": "Run",
@@ -121,8 +128,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RoleRepositoryTest.testCreateRestRoles">
-    <configuration name="RoleRepositoryTest.testCreateFirstRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.UserRepositoryTest.testDeleteUser">
+    <configuration name="UserRepositoryTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dwshopBackend" />
       <extension name="coverage">
         <pattern>
@@ -131,14 +138,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
-      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.RoleRepositoryTest" />
-      <option name="METHOD_NAME" value="testCreateFirstRole" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testDeleteUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoleRepositoryTest.testCreateRestRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserRepositoryTest.testGetUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dwshopBackend" />
       <extension name="coverage">
         <pattern>
@@ -147,8 +154,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
-      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.RoleRepositoryTest" />
-      <option name="METHOD_NAME" value="testCreateRestRoles" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testGetUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.testListAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dwshopBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwshop.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testListAllUsers" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.testUpdateUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dwshopBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwshop.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testUpdateUserDetails" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.testUpdateUserRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dwshopBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwshop.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testUpdateUserRoles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,8 +232,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RoleRepositoryTest.testCreateRestRoles" />
-        <item itemvalue="JUnit.RoleRepositoryTest.testCreateFirstRole" />
+        <item itemvalue="JUnit.UserRepositoryTest.testDeleteUser" />
+        <item itemvalue="JUnit.UserRepositoryTest.testUpdateUserRoles" />
+        <item itemvalue="JUnit.UserRepositoryTest.testUpdateUserDetails" />
+        <item itemvalue="JUnit.UserRepositoryTest.testGetUserById" />
+        <item itemvalue="JUnit.UserRepositoryTest.testListAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +265,7 @@
       <workItem from="1705922925830" duration="1480000" />
       <workItem from="1705924822389" duration="1550000" />
       <workItem from="1705927411298" duration="3250000" />
-      <workItem from="1705973234282" duration="3830000" />
+      <workItem from="1705973234282" duration="9940000" />
     </task>
     <servers />
   </component>
