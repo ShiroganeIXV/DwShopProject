@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/UserRepositoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -81,6 +81,7 @@
     "JUnit.UserRepositoryTest.testListAllUsers.executor": "Run",
     "JUnit.UserRepositoryTest.testUpdateUserDetails.executor": "Run",
     "JUnit.UserRepositoryTest.testUpdateUserRoles.executor": "Run",
+    "JavaScript Debug.users.html.executor": "Run",
     "Maven.dwshopProject [clean].executor": "Run",
     "Maven.dwshopProject [compile].executor": "Run",
     "Maven.dwshopProject [install].executor": "Run",
@@ -97,7 +98,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "openjdk-21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/OneDrive/Programing/Codepresso/Round 2/Exercise/Day5/jpashop",
+    "last_opened_file_path": "E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/dwshopWebParent/dwshopBackend/src/main/resources/templates",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -114,6 +115,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\templates" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static\images" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopFrontend\src\main\resources" />
@@ -128,7 +130,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserRepositoryTest.testDeleteUser">
+  <component name="RunManager" selected="Spring Boot.DwshopBackendApplication">
+    <configuration name="UserRepositoryTest.testCreateUserWithTwoRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dwshopBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwshop.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testCreateUserWithTwoRoles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRepositoryTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dwshopBackend" />
       <extension name="coverage">
@@ -156,22 +174,6 @@
       <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
       <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
       <option name="METHOD_NAME" value="testGetUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepositoryTest.testListAllUsers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dwshopBackend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dwshop.admin.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
-      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="testListAllUsers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -232,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithTwoRoles" />
         <item itemvalue="JUnit.UserRepositoryTest.testDeleteUser" />
         <item itemvalue="JUnit.UserRepositoryTest.testUpdateUserRoles" />
         <item itemvalue="JUnit.UserRepositoryTest.testUpdateUserDetails" />
         <item itemvalue="JUnit.UserRepositoryTest.testGetUserById" />
-        <item itemvalue="JUnit.UserRepositoryTest.testListAllUsers" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +267,8 @@
       <workItem from="1705922925830" duration="1480000" />
       <workItem from="1705924822389" duration="1550000" />
       <workItem from="1705927411298" duration="3250000" />
-      <workItem from="1705973234282" duration="9940000" />
+      <workItem from="1705973234282" duration="10067000" />
+      <workItem from="1705989601792" duration="2664000" />
     </task>
     <servers />
   </component>
