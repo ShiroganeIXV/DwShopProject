@@ -17,7 +17,8 @@
 	</properties>
 	<dependencies>
 
-	</dependencies>
+
+    </dependencies>
 
 	<build>
 		<plugins>
