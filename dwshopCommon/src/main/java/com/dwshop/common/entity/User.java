@@ -114,6 +114,14 @@ public class User {
         this.roles = roles;
     }
 
+    public void setEnabled(Boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public Boolean getEnabled() {
+        return enabled;
+    }
+
     // Methods
     public void addRole(Role role){  // add a role to the roles set
         this.roles.add(role);

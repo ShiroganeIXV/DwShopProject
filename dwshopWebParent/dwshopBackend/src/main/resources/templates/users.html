@@ -88,6 +88,12 @@
         <a class="btn btn-primary" th:href="@{/users/new}">Create New User</a>
     </div>
 
+    <!-- Display flash attribute -->
+    <div th:if="${message != null}" class="alert alert-success ">
+        [[${message}]]
+    </div>
+
+
     <div class="table-responsive">
         <table class="table table-bordered table-hover table-striped">
             <thead class="table-dark">

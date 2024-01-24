@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/css/mystyle.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -130,6 +131,54 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DwshopBackendApplication">
+    <configuration name="RoleRepositoryTest.testCreateFirstRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dwshopBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwshop.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.RoleRepositoryTest" />
+      <option name="METHOD_NAME" value="testCreateFirstRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RoleRepositoryTest.testCreateRestRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dwshopBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwshop.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.RoleRepositoryTest" />
+      <option name="METHOD_NAME" value="testCreateRestRoles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserRepositoryTest.testCreateUserWithOneRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dwshopBackend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.dwshop.admin.user.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
+      <option name="METHOD_NAME" value="testCreateUserWithOneRole" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRepositoryTest.testCreateUserWithTwoRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dwshopBackend" />
       <extension name="coverage">
@@ -146,38 +195,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserRepositoryTest.testDeleteUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dwshopBackend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dwshop.admin.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
-      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="testDeleteUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepositoryTest.testGetUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dwshopBackend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dwshop.admin.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
-      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="testGetUserById" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="UserRepositoryTest.testUpdateUserDetails" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dwshopBackend" />
       <extension name="coverage">
@@ -189,22 +206,6 @@
       <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
       <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
       <option name="METHOD_NAME" value="testUpdateUserDetails" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserRepositoryTest.testUpdateUserRoles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dwshopBackend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.dwshop.admin.user.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
-      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.UserRepositoryTest" />
-      <option name="METHOD_NAME" value="testUpdateUserRoles" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,11 +234,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithTwoRoles" />
-        <item itemvalue="JUnit.UserRepositoryTest.testDeleteUser" />
-        <item itemvalue="JUnit.UserRepositoryTest.testUpdateUserRoles" />
         <item itemvalue="JUnit.UserRepositoryTest.testUpdateUserDetails" />
-        <item itemvalue="JUnit.UserRepositoryTest.testGetUserById" />
+        <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithTwoRoles" />
+        <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithOneRole" />
+        <item itemvalue="JUnit.RoleRepositoryTest.testCreateRestRoles" />
+        <item itemvalue="JUnit.RoleRepositoryTest.testCreateFirstRole" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +269,7 @@
       <workItem from="1705927411298" duration="3250000" />
       <workItem from="1705973234282" duration="10067000" />
       <workItem from="1705989601792" duration="2985000" />
-      <workItem from="1706060234236" duration="4987000" />
+      <workItem from="1706060234236" duration="7325000" />
     </task>
     <servers />
   </component>
