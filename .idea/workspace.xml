@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/PasswordEncoderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +68,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.PasswordEncoderTest.PasswordEncoderTest.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.RoleRepositoryTest.testCreateFirstRole.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.RoleRepositoryTest.testCreateRestRoles.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserRepositoryTest.executor&quot;: &quot;Run&quot;,
@@ -98,7 +97,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/dwshopWebParent/dwshopBackend/src/main/resources/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/security&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -115,6 +114,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\java\com\dwshop\admin\security" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\templates" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static\images" />
@@ -131,7 +131,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.DwshopBackendApplication">
-    <configuration name="RoleRepositoryTest.testCreateFirstRole" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PasswordEncoderTest.PasswordEncoderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dwshopBackend" />
       <extension name="coverage">
         <pattern>
@@ -140,8 +140,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.dwshop.admin.user" />
-      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.RoleRepositoryTest" />
-      <option name="METHOD_NAME" value="testCreateFirstRole" />
+      <option name="MAIN_CLASS_NAME" value="com.dwshop.admin.user.PasswordEncoderTest" />
+      <option name="METHOD_NAME" value="PasswordEncoderTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,7 +238,7 @@
         <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithTwoRoles" />
         <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithOneRole" />
         <item itemvalue="JUnit.RoleRepositoryTest.testCreateRestRoles" />
-        <item itemvalue="JUnit.RoleRepositoryTest.testCreateFirstRole" />
+        <item itemvalue="JUnit.PasswordEncoderTest.PasswordEncoderTest" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +269,10 @@
       <workItem from="1705927411298" duration="3250000" />
       <workItem from="1705973234282" duration="10067000" />
       <workItem from="1705989601792" duration="2985000" />
-      <workItem from="1706060234236" duration="7325000" />
+      <workItem from="1706060234236" duration="7419000" />
+      <workItem from="1706083439221" duration="874000" />
+      <workItem from="1706189101738" duration="239000" />
+      <workItem from="1706189363066" duration="155000" />
     </task>
     <servers />
   </component>
