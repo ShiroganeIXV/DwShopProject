@@ -129,6 +129,14 @@ public class UserRepositoryTest {
         assertThat(isExist).isFalse();
     }
 
+    // Test for unique email
+    @Test
+    public void testGetUserByEmail() {
+        // String email = "abc@edf.com";  // This will be null bc there is no user with that email
+        String email = "ns001@outlook.com";
+        User user = repo.getUserByEmail(email);
+        assertThat(user).isNotNull();
 
+    }
 }
 

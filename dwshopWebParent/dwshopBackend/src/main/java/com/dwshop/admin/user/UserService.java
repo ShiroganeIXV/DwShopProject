@@ -34,10 +34,16 @@ public class UserService {
         userRepo.save(user);
     }
 
+    public boolean isEmailUnique(String email){
+        User userByEmail= userRepo.getUserByEmail(email);
+        return userByEmail == null; // if True (userByEmail is null), then the email is unique
+    }
+
     // private Methods
     private void encodePassword(User user){
         String encodedPassword = passwordEncoder.encode(user.getPassword());
         user.setPassword(encodedPassword);
     }
+
 
 }

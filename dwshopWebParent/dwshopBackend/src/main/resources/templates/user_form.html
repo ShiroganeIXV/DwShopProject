@@ -90,7 +90,8 @@
 
     </div>
 
-    <form th:action="@{/users/save}" method="post" style="max-width: 700px; margin: 0 auto" th:object="${user}">
+    <form th:action="@{/users/save}" method="post" style="max-width: 700px; margin: 0 auto"
+          th:object="${user}" onsubmit="return checkEmailUnique(this)"> <!-- this means the form itself -->
         <div class="border border-secondary rounded p-3">
             <div class="form-group row">
 
@@ -189,6 +190,36 @@
 
     </form>
 
+    <!-- Bootstrap 5 modal dialog box -->
+    <div class="modal fade text-center" id="modalDialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modelTitle">
+                        Warning
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                <span id="modalBody">
+
+                </span>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
     <div class="text-center">
@@ -202,6 +233,46 @@
                 window.location = "[[@{/users}]]";
             });
         });
+
+        function checkEmailUnique(form) {
+            // alert("checkEmailUnique"); // popup a message
+
+            url = "[[@{/users/check_email}]]"; // get the URL from the restController
+            userEmail = $("#email").val(); // get the value of the th:field with id="email"
+
+            // Security: CSRF, Cross-Site Request Forgery
+            csrf = $("input[name='_csrf']").val(); // get the value of the hidden input with name="_csrf"
+
+            params = {email: userEmail, _csrf: csrf}; // // create a JSON object {"email": "userEmail"}
+
+
+            //if (true) return false; // if the modal is true then skip the below code
+
+
+            $.post(url, params, function (response) { // sing jQuery's $.post() method to send a POST request to the server
+                //alert("Response from server: " + response); // popup a message for testing
+                if (response == "OK") {
+                    form.submit(); // submit the form
+                } else if (response == "Duplicated") {
+                    // alert("The email " + userEmail + " has been used by another user!");
+                    showModalDialog("Warning", "The email " + userEmail + " has been used by another user!");
+                } else {
+                    showModalDialog("Error", "Unknown response from server!")
+                }
+            }).fail(function () { // callback function (by Jquery) for failed request
+                showModalDialog("Error", "Could not connect to the server! ");
+            })
+            // this has to be outside the $.post() method to make sure the form is  submitted only after the response from the server is received
+            return false; // return false to cancel the form submission
+        }
+
+        function showModalDialog(title,message){
+            $("#modalTitle").text(title);
+            $("#modalBody").text(message);
+            // show modal dialog box
+            $("#modalDialog").modal('show'); // show the modal dialog box
+        }
+
     </script>
 </div>
 
