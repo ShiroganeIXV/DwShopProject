@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/fontawesome/all.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-v4compatibility.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/webfonts/fa-v4compatibility.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/64b0859c-e211-4abf-abdf-e803e0fda2ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/64b0859c-e211-4abf-abdf-e803e0fda2ee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,67 +75,67 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "JUnit.PasswordEncoderTest.PasswordEncoderTest.executor": "Run",
-    "JUnit.RoleRepositoryTest.testCreateFirstRole.executor": "Run",
-    "JUnit.RoleRepositoryTest.testCreateRestRoles.executor": "Run",
-    "JUnit.UserRepositoryTest.executor": "Run",
-    "JUnit.UserRepositoryTest.testCreateUser.executor": "Run",
-    "JUnit.UserRepositoryTest.testCreateUserWithOneRole.executor": "Run",
-    "JUnit.UserRepositoryTest.testCreateUserWithTwoRoles.executor": "Run",
-    "JUnit.UserRepositoryTest.testDeleteUser.executor": "Run",
-    "JUnit.UserRepositoryTest.testGetUserByEmail.executor": "Run",
-    "JUnit.UserRepositoryTest.testGetUserById.executor": "Run",
-    "JUnit.UserRepositoryTest.testListAllUsers.executor": "Run",
-    "JUnit.UserRepositoryTest.testUpdateUserDetails.executor": "Run",
-    "JUnit.UserRepositoryTest.testUpdateUserRoles.executor": "Run",
-    "JavaScript Debug.users.html.executor": "Run",
-    "Maven.dwshopProject [clean].executor": "Run",
-    "Maven.dwshopProject [compile].executor": "Run",
-    "Maven.dwshopProject [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.DwshopBackendApplication.executor": "Run",
-    "Spring Boot.DwshopFrontendApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/security",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/src/main/java/com/dwshop/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.25172412",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JUnit.PasswordEncoderTest.PasswordEncoderTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoleRepositoryTest.testCreateFirstRole.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RoleRepositoryTest.testCreateRestRoles.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testCreateUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testCreateUserWithOneRole.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testCreateUserWithTwoRoles.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testDeleteUser.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testGetUserByEmail.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testGetUserById.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testListAllUsers.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testUpdateUserDetails.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.UserRepositoryTest.testUpdateUserRoles.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.users.html.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopProject [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopProject [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopProject [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.DwshopBackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.DwshopFrontendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/dwshopWebParent/dwshopBackend/src/main/resources/static/fontawesome&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/src/main/java/com/dwshop/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.25172412&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static\fontawesome" />
+      <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\java\com\dwshop\admin\security" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\templates" />
-      <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static\images" />
-      <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopFrontend\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -284,7 +291,10 @@
       <workItem from="1706189101738" duration="239000" />
       <workItem from="1706189363066" duration="155000" />
       <workItem from="1706189527600" duration="1511000" />
-      <workItem from="1706237791946" duration="8521000" />
+      <workItem from="1706237791946" duration="8560000" />
+      <workItem from="1706252884220" duration="1715000" />
+      <workItem from="1706258690648" duration="977000" />
+      <workItem from="1706266827234" duration="5240000" />
     </task>
     <servers />
   </component>

@@ -13,8 +13,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
-
-    
+    <link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
 </head>
 
 <body>
@@ -85,7 +85,7 @@
 
     <div>
         <h2>Manage Users</h2>
-        <a class="btn btn-primary" th:href="@{/users/new}">Create New User</a>
+        <a class="btn btn-primary btn-custom" th:href="@{/users/new}">Create New User</a>
     </div>
 
     <!-- Display flash attribute -->
@@ -114,14 +114,24 @@
                 <tr th:each="user : ${listUsers}">
 
                     <td>[[${user.id}]] </td>
-                    <td></td>
+                    <td><span class="fa-solid fa-image-portrait fa-3x icon-gold"></span></td>
                     <td>[[${user.email}]] </td>
                     <td>[[${user.firstName}]] </td>
                     <td>[[${user.lastName}]] </td>
                     <td>[[${user.roles}]] </td>
-                    <td>[[${user.enabled}]] </td>
                     <td>
-                        Edit &nbsp; Delete
+                        <a href="">
+                            <span th:if="${user.enabled==true}" class="fa-solid fa-toggle-on fa-2x" style="color: goldenrod;" ></span>
+                        </a>
+                        <a href="">
+                            <span th:if="${user.enabled==false}" class="fa-solid fa-toggle-off fa-2x" style="color: gray;" ></span>
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a class="fa-regular fa-pen-to-square fa-2x icon-gold" href=""></a>
+                        &nbsp; <!-- "non-breaking space". It is used to create a space in text that cannot be broken by word wrap. -->
+                        <a class="fa-solid fa-trash-can fa-2x icon-gold " href=""></a>
                     </td>
 
                 </tr>

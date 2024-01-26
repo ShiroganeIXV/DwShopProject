@@ -1,0 +1,14 @@
+*.icon-white {color: white}
+*.icon-silver {color: silver}
+*.icon-green {color: green}
+*.icon-red {color: red}
+*.icon-dark {color: gray}
+*.icon-gold {color: rgba(246, 211, 106, 0.95)
+}
+*.icon-blue {color: darkblue}
+
+*.btn-custom {background-color: black; color: goldenrod; border-color: black; margin: 10px}
+*.btn-custom:hover {background-color: goldenrod; color: black; border-color: goldenrod; margin: 10px }
+
+*.btn-gold{background-color: goldenrod; color: black; border-color: goldenrod; margin: 10px }
+*.btn-gold:hover{background-color: black; color: goldenrod; border-color: black; margin: 10px }
