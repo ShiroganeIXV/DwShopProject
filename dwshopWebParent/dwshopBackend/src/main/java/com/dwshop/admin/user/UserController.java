@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -25,7 +26,7 @@ public class UserController {
         return "users";
     }
 
-    // add new user
+    //! Create new user
     @GetMapping("/users/new")
     public String newUser(Model model){
         User user = new User();
@@ -34,6 +35,8 @@ public class UserController {
         // bind USER object with model attribute
         model.addAttribute("user", user);
         model.addAttribute("listRoles", listRoles);
+        // add title to model attribute
+        model.addAttribute("pageTitle", "Create New User");
         return "user_form";
     }
         // save user
@@ -47,5 +50,22 @@ public class UserController {
     }
 
 
+    //! Edit User
+    @GetMapping("/users/edit/{id}")
+    public String editUser(@PathVariable(name="id") Integer id, RedirectAttributes redirectAttributes, Model model){
+        try {
+            User user = service.get(id);
+            List<Role> listRoles = service.listRoles();
+            model.addAttribute("user", user);
+            model.addAttribute("listRoles", listRoles);
+            model.addAttribute("pageTitle", "Edit User (ID: " + id + ")");
+            return "user_form";
+
+        } catch (UserNotFoundException ex) {
+            redirectAttributes.addFlashAttribute("message", ex.getMessage()); // ex.getMessage() is the message we set in UserNotFoundException in service
+            return "redirect:/users";
+        }
+
+    }
 
 }

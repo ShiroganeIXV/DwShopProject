@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"> <!-- Responsive For mobile devices -->
 
-    <title>Create New User</title>
+    <title>[[${pageTitle}]]</title>
 
     <!-- JS -->
     <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
@@ -87,12 +87,15 @@
     </div>
 
     <div>
-        <h2>Manage Users | Create New User</h2>
+        <h2>Manage Users | [[${pageTitle}]]</h2>
 
     </div>
 
     <form th:action="@{/users/save}" method="post" style="max-width: 700px; margin: 0 auto"
           th:object="${user}" onsubmit="return checkEmailUnique(this)"> <!-- this means the form itself -->
+
+        <input type="hidden" th:field="*{id}">
+        
         <div class="border border-secondary rounded p-3">
             <div class="form-group row">
 
@@ -137,7 +140,10 @@
                 </label>
 
                 <div class="col-sm-8 tooltip-container">
-                    <input type="password" class="form-control" placeholder="Password" th:field="*{password}" required minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" >
+                    <input th:if="${user.id == null}" type="password" class="form-control"
+                           placeholder="Password" th:field="*{password}" required minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" >
+                    <input th:if="${user.id != null}" type="password" class="form-control"
+                           placeholder="Leave blank if you don't want to change the password" th:field="*{password}" minlength="8" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}" >
                     <span class="tooltip-text">
                         <ul>
                             <li>At least one digit: [0-9] </li>
@@ -182,7 +188,7 @@
                 </label>
 
                 <div class="col-sm-8">
-                    <input type="checkbox" th:field="*{enabled}" >
+                    <input  type="checkbox" th:field="*{enabled}">
                 </div>
 
             </div>
@@ -240,11 +246,12 @@
 
             url = "[[@{/users/check_email}]]"; // get the URL from the restController
             userEmail = $("#email").val(); // get the value of the th:field with id="email"
+            userId = $("#id").val(); // get the value of the th:field with id="id"
 
             // Security: CSRF, Cross-Site Request Forgery
             csrf = $("input[name='_csrf']").val(); // get the value of the hidden input with name="_csrf"
 
-            params = {email: userEmail, _csrf: csrf}; // // create a JSON object {"email": "userEmail"}
+            params = {id: userId, email: userEmail, _csrf: csrf}; // // create a JSON object {"email": "userEmail"}
 
 
             //if (true) return false; // if the modal is true then skip the below code

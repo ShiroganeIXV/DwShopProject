@@ -12,3 +12,28 @@
 
 *.btn-gold{background-color: goldenrod; color: black; border-color: goldenrod; margin: 10px }
 *.btn-gold:hover{background-color: black; color: goldenrod; border-color: black; margin: 10px }
+
+
+/**.checkbox-gold {
+    background-color: white;
+    border-color: black;
+}
+
+*.checkbox-gold:checked {
+    background-color: goldenrod;
+    border-color: black;
+}*/
+
+input[type="checkbox"].checkbox-gold:checked {
+    -webkit-appearance: none;
+    background-color: goldenrod;
+    border-color: black;
+}
+
+/*
+input[type="checkbox"].checkbox-gold:checked:after {
+    content: '\2714';
+    color: white;
+    text-align: center;
+    display: block;
+}*/

@@ -16,9 +16,9 @@ public class UserRestController {
     }
 
     @PostMapping("/users/check_email")
-    public String checkDuplicateEmail(@Param("email") String email){  //@Param: used to bind the HTTP request parameter named email to the method parameter email
+    public String checkDuplicateEmail(@Param("id") Integer id,@Param("email") String email){  //@Param: used to bind the HTTP request parameter named email to the method parameter email
 
-        return service.isEmailUnique(email) ? "OK" : "Duplicated"; //ternary operator ? : is used to return one of two values based on a boolean condition. If the condition is true, it returns the value before the :. If the condition is false, it returns the value after the :.
+        return service.isEmailUnique(id,email) ? "OK" : "Duplicated"; //ternary operator ? : is used to return one of two values based on a boolean condition. If the condition is true, it returns the value before the :. If the condition is false, it returns the value after the :.
 
     }
 
