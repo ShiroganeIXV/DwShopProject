@@ -67,6 +67,24 @@ public class UserService {
         //return userByEmail == null; // if True (userByEmail is null), then the email is unique
     }
 
+    public void delete(Integer id) throws UserNotFoundException {
+
+        Long countById = userRepo.countById(id);
+        if (countById == null || countById == 0) {
+            throw new UserNotFoundException("Could not find any user with ID " + id);
+        }
+
+        User user = userRepo.findById(id).get();
+                //.orElseThrow(() -> new UserNotFoundException("Could not find any user with ID " + id));
+
+        // Remove the association between the user and roles
+        user.getRoles().clear(); // This will remove the user's roles associations in the users_roles table
+
+        // Now, delete the user
+        userRepo.deleteById(id);
+
+    }
+
     // private Methods
     private void encodePassword(User user){
         String encodedPassword = passwordEncoder.encode(user.getPassword());
@@ -82,4 +100,6 @@ public class UserService {
         }
 
     }
+
+
 }

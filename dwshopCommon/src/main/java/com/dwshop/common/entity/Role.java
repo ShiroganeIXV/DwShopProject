@@ -58,6 +58,8 @@ public class Role {
         this.description = description;
     }
 
+
+
     // equals() and hashCode() methods
 
     @Override

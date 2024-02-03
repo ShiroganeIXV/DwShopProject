@@ -39,7 +39,7 @@ public class UserController {
         model.addAttribute("pageTitle", "Create New User");
         return "user_form";
     }
-        // save user
+        //! save user
     @PostMapping("/users/save")
     public String saveUser(User user, RedirectAttributes redirectAttributes){
         System.out.println(user);
@@ -62,10 +62,25 @@ public class UserController {
             return "user_form";
 
         } catch (UserNotFoundException ex) {
-            redirectAttributes.addFlashAttribute("message", ex.getMessage()); // ex.getMessage() is the message we set in UserNotFoundException in service
+            redirectAttributes.addFlashAttribute("messageError", ex.getMessage());; // ex.getMessage() is the message we set in UserNotFoundException in service
             return "redirect:/users";
         }
 
+    }
+
+    //! Delete User
+    @GetMapping("/users/delete/{id}")
+    public String deleteUser (@PathVariable(name="id") Integer id, Model model, RedirectAttributes redirectAttributes){ // used to pass attributes to the model after a redirect. It's a way to carry data when you do a redirect.
+        try {
+            service.delete(id);
+            redirectAttributes.addFlashAttribute("message", "The user ID " + id + " has been deleted successfully."); // addfalshattribute: used to pass attributes to the model after a redirect. It's a way to carry data when you do a redirect.
+
+        } catch (UserNotFoundException e) {
+            redirectAttributes.addFlashAttribute("messageError", e.getMessage());
+
+        }
+
+        return "redirect:/users";
     }
 
 }

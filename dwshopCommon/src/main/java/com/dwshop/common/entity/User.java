@@ -114,6 +114,10 @@ public class User {
         this.roles = roles;
     }
 
+    public void getRoles(Set<Role> roles) {
+        this.roles = roles;
+    }
+
     public void setEnabled(Boolean enabled) {
         this.enabled = enabled;
     }
