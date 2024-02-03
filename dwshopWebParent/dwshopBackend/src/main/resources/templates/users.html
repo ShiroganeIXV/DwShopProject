@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}">
     <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/mystyle.css}">
 </head>
 
 <body>
@@ -139,7 +140,10 @@
                         <a class="fa-regular fa-pen-to-square fa-2x icon-gold" th:href="@{'/users/edit/'+${user.id}}"
                             title="Edit this user"></a>
                         &nbsp; <!-- "non-breaking space". It is used to create a space in text that cannot be broken by word wrap. -->
-                        <a class="fa-solid fa-trash-can fa-2x icon-gold " th:href="@{'/users/delete/'+${user.id}}" title="Delete this user"></a>
+                        <a class="fa-solid fa-trash-can fa-2x icon-gold link-delete"
+                           th:href="@{'/users/delete/'+${user.id}}"
+                           th:userId="${user.id}"
+                           title="Delete this user"></a>
                     </td>
 
                 </tr>
@@ -148,11 +152,58 @@
         </table>
     </div>
 
+    <div class="modal fade text-center" id="confirmModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modelTitle">
+                        Delete Confirmation
+                    </h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- Modal Body -->
+                <div class="modal-body">
+                <span id="confirmText">
+
+                </span>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="modal-footer">
+                    <a class="btn btn-success" href="" id="yesButton">
+                        Yes
+                    </a>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
+                        No
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <div class="text-center">
         <p>DwShop Control Panel - Copyright &copy; DwShop</p>
     </div>
 
 </div>
+
+<script>
+    $(document).ready(function(){ // event-handler for delete link
+        $('.link-delete').on('click', function(e){
+            e.preventDefault();
+            link = $(this);
+            userId = link.attr('userId');
+            $('#yesButton').attr('href', link.attr('href')); // Set the href attribute before showing the modal
+            $('#confirmText').text('Are you sure to delete user ID: ' + userId + '?');
+            $('#confirmModal').modal('show'); // Show the modal after setting the href attribute
+        });
+    });
+</script>
+
 
 </body>
 </html>
