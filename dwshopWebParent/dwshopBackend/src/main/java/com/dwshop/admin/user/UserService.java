@@ -5,11 +5,13 @@ import com.dwshop.common.entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.NoSuchElementException;
 
 @Service
+@Transactional
 public class UserService {
     @Autowired
     private UserRepository userRepo;
@@ -101,5 +103,8 @@ public class UserService {
 
     }
 
+    public void updateUserEnabledStatus(Integer id, boolean enabled) {
+        userRepo.updateEnabledStatus(id, enabled);
+    }
 
 }

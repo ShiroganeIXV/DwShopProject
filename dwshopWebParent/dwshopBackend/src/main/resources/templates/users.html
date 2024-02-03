@@ -128,10 +128,12 @@
                     <td>[[${user.lastName}]] </td>
                     <td>[[${user.roles}]] </td>
                     <td>
-                        <a href="">
+                        <a th:href="@{'/users/'+ ${user.id} +'/enabled/false'}"
+                        title="Disable this user"> <!-- From True to False  -->
                             <span th:if="${user.enabled==true}" class="fa-solid fa-toggle-on fa-2x" style="color: goldenrod;" ></span>
                         </a>
-                        <a href="">
+                        <a th:href="@{'/users/'+ ${user.id} +'/enabled/true'}"
+                        title="Enable this user">
                             <span th:if="${user.enabled==false}" class="fa-solid fa-toggle-off fa-2x" style="color: gray;" ></span>
                         </a>
                     </td>

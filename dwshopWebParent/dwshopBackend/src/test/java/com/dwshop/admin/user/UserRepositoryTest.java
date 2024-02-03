@@ -149,8 +149,6 @@ public class UserRepositoryTest {
         //then
         assertThat(countById).isNotNull().isGreaterThan(0);
 
-
-
     }
 }
 
