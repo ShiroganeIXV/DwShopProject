@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/images/default-user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/64b0859c-e211-4abf-abdf-e803e0fda2ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/64b0859c-e211-4abf-abdf-e803e0fda2ee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/UserRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/test/java/com/dwshop/admin/user/UserRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +100,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject/dwshopWebParent/dwshopBackend/src/main/resources/static/fontawesome&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/OneDrive/Programing/VTCAcademy/08 Project 1/Project E-commerce/DwShopProject/dwshopProject&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -130,6 +129,9 @@
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\java\com\dwshop\admin\security" />
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\templates" />
+      <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\OneDrive\Programing\VTCAcademy\08 Project 1\Project E-commerce\DwShopProject\dwshopProject\dwshopWebParent\dwshopBackend\src\main\resources\static\images" />
     </key>
   </component>
@@ -259,6 +261,7 @@
       <set>
         <option value="jdk-17.0.9-corretto-17.0.9-3183f394aec4-8f899f12" />
         <option value="jdk-21.0.1-openjdk-21.0.1-f644763e9732-f98dd351" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
         <option value="jdk-21.0.2-openjdk-21.0.2-f644763e9732-c0c073db" />
       </set>
     </attachedChunks>
@@ -297,6 +300,8 @@
       <workItem from="1706867250502" duration="626000" />
       <workItem from="1706870482757" duration="188000" />
       <workItem from="1706931223049" duration="7826000" />
+      <workItem from="1707388685464" duration="655000" />
+      <workItem from="1707467390663" duration="1099000" />
     </task>
     <servers />
   </component>
