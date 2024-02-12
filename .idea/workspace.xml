@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/FileUploadUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-photos/2/NaotoShirogane.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-photos/3/Diana Wu.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-photos/4/KentHervey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-photos/1/DwShop_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-photos/1/ayakasayakaigarashi-2001010981.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/FileUploadUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/FileUploadUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +317,7 @@
       <workItem from="1707470957209" duration="1119000" />
       <workItem from="1707472152645" duration="2167000" />
       <workItem from="1707704305950" duration="115000" />
-      <workItem from="1707704440554" duration="83000" />
+      <workItem from="1707704440554" duration="3135000" />
     </task>
     <servers />
   </component>

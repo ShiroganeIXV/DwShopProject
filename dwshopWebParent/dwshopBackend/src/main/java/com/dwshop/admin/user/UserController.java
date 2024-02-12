@@ -48,22 +48,29 @@ public class UserController {
     @PostMapping("/users/save")
     public String saveUser(User user,
                            RedirectAttributes redirectAttributes,
-                           @RequestParam("image")MultipartFile multipartFile) throws IOException {
+                           @RequestParam("image")MultipartFile multipartFile) throws IOException, UserNotFoundException {
         System.out.println(user);
         System.out.println(multipartFile.getOriginalFilename());
 
         // save uploaded file
-        if(!multipartFile.isEmpty()){
+        if (!multipartFile.isEmpty()) {
             String fileName = StringUtils.cleanPath(multipartFile.getOriginalFilename());
             user.setPhotos(fileName);
-            User saveUser =service.save(user);
+            User saveUser = service.save(user);
 
             String uploadDir = "user-photos/" + saveUser.getId();
 
+            FileUploadUtil.cleanDir(uploadDir); // clean old file
+
             FileUploadUtil.saveFile(uploadDir, fileName, multipartFile);
 
+        } else {
+            User existingUser = service.get(user.getId());
+            if (existingUser.getPhotos() != null) {
+                user.setPhotos(existingUser.getPhotos());
+                service.save(user);
+            }
         }
-
         redirectAttributes.addFlashAttribute("message", "The user has been saved successfully.");
         return "redirect:/users";
     }
