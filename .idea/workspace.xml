@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="df374309-c248-458a-a067-defc027f6c8b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/static/images/default-user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/64b0859c-e211-4abf-abdf-e803e0fda2ee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/64b0859c-e211-4abf-abdf-e803e0fda2ee.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/FileUploadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-photos/2/NaotoShirogane.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-photos/3/Diana Wu.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-photos/4/KentHervey.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopCommon/src/main/java/com/dwshop/common/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/java/com/dwshop/admin/user/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/user_form.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/dwshopWebParent/dwshopBackend/src/main/resources/templates/users.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +91,20 @@
     &quot;JUnit.UserRepositoryTest.testUpdateUserDetails.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.UserRepositoryTest.testUpdateUserRoles.executor&quot;: &quot;Run&quot;,
     &quot;JavaScript Debug.users.html.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopBackend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopBackend [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopBackend [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopBackend [org.apache.maven.plugins:maven-clean-plugin:3.3.2:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopBackend [org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopBackend [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopBackend [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopCommon [compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.dwshopProject [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.dwshopProject [compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.dwshopProject [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopProject [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopProject [org.apache.maven.plugins:maven-install-plugin:3.1.1:install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.dwshopProject [validate].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -248,11 +266,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserRepositoryTest.testCountById" />
         <item itemvalue="JUnit.UserRepositoryTest.testUpdateUserDetails" />
         <item itemvalue="JUnit.UserRepositoryTest.testGetUserByEmail" />
         <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithTwoRoles" />
         <item itemvalue="JUnit.UserRepositoryTest.testCreateUserWithOneRole" />
+        <item itemvalue="JUnit.UserRepositoryTest.testCountById" />
       </list>
     </recent_temporary>
   </component>
@@ -301,7 +319,11 @@
       <workItem from="1706870482757" duration="188000" />
       <workItem from="1706931223049" duration="7826000" />
       <workItem from="1707388685464" duration="655000" />
-      <workItem from="1707467390663" duration="1099000" />
+      <workItem from="1707467390663" duration="3500000" />
+      <workItem from="1707470957209" duration="1119000" />
+      <workItem from="1707472152645" duration="2167000" />
+      <workItem from="1707704305950" duration="115000" />
+      <workItem from="1707704440554" duration="83000" />
     </task>
     <servers />
   </component>

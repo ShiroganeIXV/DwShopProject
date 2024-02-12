@@ -92,6 +92,7 @@
     </div>
 
     <form th:action="@{/users/save}" method="post" style="max-width: 700px; margin: 0 auto"
+          enctype="multipart/form-data"
           th:object="${user}" onsubmit="return checkEmailUnique(this)"> <!-- this means the form itself -->
 
         <input type="hidden" th:field="*{id}">
@@ -158,10 +159,6 @@
 
             </div>
 
-            <div class="text-center">
-                <input type="submit" value="Save" class="btn btn-primary m-3 btn-gold">
-                <input type="button" value="Cancel" class="btn btn-secondary" id="buttonCancel">
-            </div>
 
             <div class="form-group row">
 
@@ -200,12 +197,16 @@
                 </label>
 
                 <div class="col-sm-8">
-                    <input class="mb-2" type="file" id ="fileImage" accept="image/png, image/jpeg">
+                    <input class="mb-2" type="file" id ="fileImage" name="image" accept="image/png, image/jpeg">
                     <img class="img-fluid" alt="Photo Preview" th:src="@{/images/default-user.png}" id="thumbnail">
                 </div>
 
             </div>
 
+            <div class="text-center">
+                <input type="submit" value="Save" class="btn btn-primary m-3 btn-gold">
+                <input type="button" value="Cancel" class="btn btn-secondary" id="buttonCancel">
+            </div>
         </div>
 
     </form>

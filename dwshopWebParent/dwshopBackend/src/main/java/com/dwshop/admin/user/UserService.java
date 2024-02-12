@@ -32,7 +32,7 @@ public class UserService {
         return (List<Role>) roleRepo.findAll();
     }
 
-    public void save(User user) {
+    public User save(User user) {
         // if the user is creating a new or editing an existing user
         boolean isUpdatingUser = (user.getId() != null); // if the user id is not null, then we are editing an existing user
 
@@ -48,7 +48,7 @@ public class UserService {
         }else { // creating new user
             encodePassword(user);
         }
-        userRepo.save(user); // finally save the user
+        return userRepo.save(user); // finally save the user
     }
 
     public boolean isEmailUnique(Integer id, String email){
